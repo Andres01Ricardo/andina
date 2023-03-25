@@ -14,6 +14,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  max-width: 100%;
 }
 header {
     background-color: #333;
@@ -33,11 +34,11 @@ header {
     width: 100%;
     max-width: 100%;
     padding-left: 20px;
-    background: linear-gradient(to right, #48CF73,#94FFB6 50%,#48CF73 100%);
+    background: linear-gradient(to right, #48CF73,#7ddb9b 50%,#48CF73 100%);
     position: sticky;
   }
   .fa-calculator {
-    background: linear-gradient(to right, #48CF73,#94FFB6 50%,#48CF73 100%);
+    background: linear-gradient(to right, #48CF73,#7ddb9b 50%,#48CF73 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -86,41 +87,7 @@ header {
     border-radius: 8px;
 }
   
-  @media (max-width: 650px) {
-    .menuweb {
-      display: none;
-    }
-    nav{
-      justify-content: space-between;
-    }
-  
-    .toggle {
-      display: block;
-      float: right;
-      margin-right: 5%;
-    }
-  
-    .toggle.active {
-      color: #fff;
-    }
-  
-    .menuweb.active {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      z-index: 1;
-    }
-  
-    .menuweb.active li {
-      margin: 10px 0;
-    }
-  }
+
   
 #btnvirtual{
   background-color: #48CF73;
@@ -146,7 +113,6 @@ header {
   position: relative;
   /* background-color: #e3e3e3; */
   /* background: linear-gradient(to right, rgb(72, 207, 115,0.2),rgb(148, 255, 182,0.2)); */
-
   /* background-color: rgba(215, 253, 229, 0.1);
 	border: 1px solid #cccccc;
 	padding: 10px;
@@ -158,8 +124,8 @@ header {
 #derechos{
   text-align: center;
 }
-#letrerocarousel {
-  width: 40%;
+#letrerocarousel{
+  /* width: 100%; */
   height: 100%!important;
   /* display: block; */
   /* float: left; */
@@ -172,6 +138,9 @@ header {
   /* border-radius: 20px; */
   /* transform: skew(-10deg);f */
 }
+#rowinicio{
+  width: 100%!important;
+}
 #letrero-header{
   font-size: 240%;
   /* height: 100%!important; */
@@ -181,7 +150,7 @@ header {
   text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
 }
 #letrero-header2{
-  font-size: 200%;
+  font-size: 160%;
   /* height: 100%!important; */
   /* padding: 20%; */
   font-weight: bold;
@@ -194,6 +163,10 @@ header {
 }
 .card-content h3{
   font-size: 140%;
+}
+.btncards{
+  background: linear-gradient(to right, #48CF73,#72d090 50%,#48CF73 100%)!important;
+  color: white!important;
 }
 .info h1{
   color: white;
@@ -244,7 +217,7 @@ header {
   
 .container {
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -255,7 +228,7 @@ header {
   }
   
   .col-md-4 {
-    width: 33.333333%;
+    /* width: 33.333333%; */
     padding: 0 15px;
     box-sizing: border-box;
   }
@@ -278,10 +251,11 @@ header {
   display: inline-block;
   margin: 10px;
   width: 280px;
-  height: 150px;
+  height: 20%;
   background-color: #fff;
   /* box-shadow: 0 0 5px rgba(240, 240, 240, 0.3); */
   box-shadow: 0px 0px 20px rgba(0, 255, 183, 0.2);
+  border: 40px solid #48CF73;
   border-radius: 40px;
   overflow: hidden;
   cursor: pointer;
@@ -297,7 +271,7 @@ header {
 
 .card-image img{
   width: 100%;
-  height: auto;
+  height: 100%;
   max-width: 100%;
   object-fit: cover;
   transition: transform 0.9s ease-in-out;
@@ -332,7 +306,8 @@ header {
 .hoja {
 	/* background-color: rgb(92, 255, 115,0.1); */
   /* background: linear-gradient(to right, rgb(72,207,115,0.1),rgb(148,255,182,0.1) 50%,rgb(72,207,115,0.1) 100%); */
-  background: rgba(217, 236, 223, 0.7);
+  background: rgb(200, 238, 212);
+  /* background-color: transparent; */
 	border: 1px solid #cccccc;
 	padding: 20px;
 	box-shadow: 2px 2px 5px #aaaaaa;
@@ -344,7 +319,7 @@ header {
 	width: 80%;
 	margin: 0 auto;
 }
-.col-6 img{
+#imgcontabilidad{
   width: 100%;
   height: 100%;
   position: relative;
@@ -353,9 +328,6 @@ header {
 .row{
   align-items: center;
   text-align: justify;
-}
-.col-6 p{
-  font-size: 150%;
 }
 
 
@@ -403,27 +375,41 @@ h2.serviciostitulo {
   /* background-color: #48CF73; */
 }
 
-@media (max-width: 640px){
 
-  #letrero-header{
-    font-size: 150%;
-    height: 100%!important;
-    padding: 20%;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
-  }
-  #letrerocarousel{
-    width: 40%;
-  }
-  #carouselExampleDark{
-    width: 100%;
-  }
-
+#imginicio{
+  position: relative;
+  animation: mover 7s ease-in-out infinite;
+  position: absolute; 
+  z-index: -1; 
+  height: 100%;
+  width: 100%;
 }
 
-
-
+@keyframes mover {
+  0% {
+    transform: rotate(0) translateX(0) scale(1);
+  }
+  25% {
+    transform: rotate(0.2deg) translateX(-0.5px) scale(1.02);
+  }
+  50% {
+    transform: rotate(0) translateX(0) scale(1);
+  }
+  75% {
+    transform: rotate(-0.2deg) translateX(0.5px) scale(1.02);
+  }
+  100% {
+    transform: rotate(0) translateX(0) scale(1);
+  }
+}
+#txtvirtual{
+  color: #000;
+  /* color: #fff; */
+  /* font-weight: bold; */
+    /* color: white; */
+  text-shadow: 15px 15px 15px rgba(0,0,0,0.2);
+  font-size: 150%;
+}
 
 
 .imagen {
@@ -447,4 +433,66 @@ h2.serviciostitulo {
   /* background-color: rgba(51, 130, 79, 0.5); */
   background-color: rgb(72, 207, 115,0.3);
    /* define el color de fondo con el iluminado */
+}
+
+
+
+@media (max-width: 650px) {
+  .menuweb {
+    display: none;
+    margin-left: 0;
+  }
+  nav{
+    justify-content: space-between;
+  }
+
+  .toggle {
+    display: block;
+    float: right;
+    margin-right: 5%;
+  }
+
+  .toggle.active {
+    color: #fff;
+  }
+
+  .menuweb.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #48CF73,#94FFB6 50%,#48CF73 100%);
+    z-index: 1;
+  }
+
+  .menuweb.active li {
+    margin: 10px 0;
+  }
+
+  #letrero-header{
+    font-size: 150%;
+    height: 100%!important;
+    /* padding: 20%; */
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+  }
+  #letrero-header2{
+    font-size: 120%;
+    /* height: 100%!important; */
+    /* padding: 20%; */
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+  }
+  /* #letrerocarousel{
+    width: 40%;
+  } */
+  #carouselExampleDark{
+    width: 100%;
+  }
 }
