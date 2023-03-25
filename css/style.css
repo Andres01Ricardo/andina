@@ -137,6 +137,7 @@ header {
   /* margin-left: 20px; */
   /* border-radius: 20px; */
   /* transform: skew(-10deg);f */
+
 }
 #rowinicio{
   width: 100%!important;
@@ -337,7 +338,7 @@ header {
   right: 20px;
   z-index: 9999;
   /* background-color: #25d366; */
-  background-color: blue;
+  background-color: #00bb2d;
   color: #fff;
   width: 60px;
   height: 60px;
@@ -402,7 +403,7 @@ h2.serviciostitulo {
     transform: rotate(0) translateX(0) scale(1);
   }
 }
-#txtvirtual{
+.txtvirtual{
   color: #000;
   /* color: #fff; */
   /* font-weight: bold; */
@@ -494,5 +495,10 @@ h2.serviciostitulo {
   } */
   #carouselExampleDark{
     width: 100%;
+  }
+  .txtvirtual{
+    color: #000;
+    text-shadow: 15px 15px 15px rgba(0,0,0,0.2);
+    font-size: 100%;
   }
 }
