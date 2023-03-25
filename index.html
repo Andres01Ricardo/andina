@@ -25,7 +25,7 @@
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
-          <div class="toggle ">
+          <div class="toggle">
             <i class="fas fa-bars"></i>
           </div>
         </nav>
@@ -34,8 +34,11 @@
       <section id="inicio" class="w-100">
         <div class="h-100 w-100">
           <div  id="letrerocarousel" class="w-100" >
-            <div class="row" style="height: 100%!important;">
-              <div class="col-12">
+            <div id="rowinicio" class="row no-gutters" style="height: 100%!important;">
+              <div class="col-1">
+
+              </div>
+              <div class="col-10">
                 <div class="row">
                   <div class="col-12">
                     <p id="letrero-header" >ANDINA </p>
@@ -43,23 +46,17 @@
                 </div>
                 <div class="row">
                   <div class="col-12">
-                    <p id="letrero-header2" >ASESORIAS CONTABLES</p>
+                    <p id="letrero-header2" >Asesorias contables</p>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12">
-                    <a href="#nosotros" type="button" class="btn" id="btnvirtual" >Virtual</a>
+                    <a href="#home" type="button" class="btn btncards" id="btnvirtual" >Virtual</a>
                   </div>
                 </div>
               </div>
-              <!-- <div class="col-6"> -->
-                <!-- <iframe src="image/gifOficina.mp4" frameborder="0" id="gifoficina" style="position: absolute; z-index: -1; height: 100%;"></iframe> -->
-                <img src="image/cooperacion-analista-grafico-profesional-papel-economia.jpg" alt="" style="position: absolute; z-index: -1; height: 100%;" id="imginicio">
-              <!-- </div> -->
-            </div>
-            
-              
-              
+                <img src="image/cooperacion-analista-grafico-profesional-papel-economia.jpg" alt="" id="imginicio">
+            </div> 
           </div>
           
         </div>
@@ -71,8 +68,8 @@
         
         <div class="container">
             <div class="row justify-content-between">
-              <h2 class="serviciostitulo">Ofrecemos diferentes servicios</h2>
-                <div class="col-md-4 col-sm-12 d-flex flex-wrap ">
+              <h2 class="serviciostitulo">Nuestros servicios</h2>
+                <div class="col-md-4 col-sm-6 col-xs-12 d-flex flex-wrap ">
                     <div class="card">
                         <div class="card-image">
                           <!-- <img src="image/contabilidad.png" alt="Placeholder Image" class="iconoservicios"> -->
@@ -81,14 +78,66 @@
                         </div>
                         <div class="card-content">
                           <h3>Registro de
-                            costos
-                            gastos 
-                            activos
-                            inventarios.</h3>
+                            costos y
+                            gastos.</h3>
+                            <button type="button" class="btn btncards" data-bs-toggle="modal" data-bs-target="#modalcostos">
+                              Ver más
+                            </button>
                         </div>
                       </div>                      
                 </div>
-                <div class="col-md-4 col-sm-12 d-flex flex-wrap ">
+                <!-- Modal -->
+                <div class="modal fade" id="modalcostos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">REGISTRO DE COSTOS Y GASTOS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        El registro de los Costos y Gastos de la empresa, le permite ejercer el control y conocer con certeza en que situación económica se encuentra su negocio.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btncards" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 d-flex flex-wrap ">
+                  <div class="card">
+                      <div class="card-image">
+                        <img src="image/calculadoraverde.png" alt="Placeholder Image">
+                      </div>
+                      <div class="card-content">
+                        <h3>Registro
+                          de 
+                          inventarios.</h3>
+                          <button type="button" class="btn btncards" data-bs-toggle="modal" data-bs-target="#modalinventario">
+                            Ver más
+                          </button>
+                      </div>
+                    </div>                      
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="modalinventario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">REGISTRO DE INVENTARIOS</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      El registro de los inventarios en la organización es indispensable para que pueda tener control de Mercancías y Activos fijos que permite a su vez mejorar procesos, reducir costos y en cualquier momento determinar los bienes que componen el patrimonio del negocio.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btncards" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 d-flex flex-wrap ">
                     <div class="card">
                         <div class="card-image">
                           <img src="image/calculadoraverde.png" alt="Placeholder Image">
@@ -96,50 +145,149 @@
                         <div class="card-content">
                           <h3>Registro
                             de 
-                            ingresos
-                            y egresos.</h3>
+                            ingresos.</h3>
+                            <button type="button" class="btn btncards" data-bs-toggle="modal" data-bs-target="#modalingresos">
+                              Ver más
+                            </button>
                         </div>
                       </div>                      
                 </div>
-                <div class="col-md-4 col-sm-12 d-flex flex-wrap ">
+                <div class="modal fade" id="modalingresos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">REGISTRO DE INGRESOS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Tener actualizado el registro de ingresos (Ventas) permite conocer el comportamiento del flujo de efectivo y gestionar la cartera eficazmente en su negocio.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btncards" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 d-flex flex-wrap ">
                     <div class="card">
                         <div class="card-image">
                           <img src="image/cuenta.png" alt="Placeholder Image">
                         </div>
                         <div class="card-content">
                           <h3>Conciliacion de cuentas.</h3>
+                          <button type="button" class="btn btncards" data-bs-toggle="modal" data-bs-target="#modalconciliacion">
+                            Ver más
+                          </button>
                         </div>
                       </div>                      
                 </div>
-                <div class="col-md-4 col-sm-12 d-flex flex-wrap ">
+                <div class="modal fade" id="modalconciliacion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">CONCILIACION DE CUENTAS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Conciliar las cuentas periódicamente, garantiza que la información sea confiable y asi conocer la posición real de la empresa; ademas, permite proyectar con precisión y crear estrategias para el crecimiento de su negocio.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btncards" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 d-flex flex-wrap ">
                     <div class="card">
                         <div class="card-image">
                           <img src="image/ingreso.png" alt="Placeholder Image">
                         </div>
                         <div class="card-content">
                           <h3>Informes contable y proyecciones de renta.</h3>
+                          <button type="button" class="btn btncards" data-bs-toggle="modal" data-bs-target="#modalproyecciones">
+                            Ver más
+                          </button>
                         </div>
                       </div>                      
                 </div>
-                <div class="col-md-4 col-sm-12 d-flex flex-wrap ">
+                <div class="modal fade" id="modalproyecciones" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">REGISTRO DE COSTOS Y GASTOS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        El registro de los Costos y Gastos de la empresa, le permite ejercer el control y conocer con certeza en que situación económica se encuentra su negocio.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btncards" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 d-flex flex-wrap ">
                     <div class="card">
                         <div class="card-image">
                           <img src="image/sitio-web.png" alt="Placeholder Image">
                         </div>
                         <div class="card-content">
                           <h3>Elaboración y presentación de impuestos.</h3>
+                          <button type="button" class="btn btncards" data-bs-toggle="modal" data-bs-target="#modalimpuestos">
+                            Ver más
+                          </button>
                         </div>
                       </div>                      
                 </div>
-                <div class="col-md-4 col-sm-12 d-flex flex-wrap ">
+                <div class="modal fade" id="modalimpuestos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">REGISTRO DE COSTOS Y GASTOS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        El registro de los Costos y Gastos de la empresa, le permite ejercer el control y conocer con certeza en que situación económica se encuentra su negocio.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btncards" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 d-flex flex-wrap ">
                     <div class="card">
                         <div class="card-image">
                           <img src="image/transferencia-de-dinero.png" alt="Placeholder Image">
                         </div>
                         <div class="card-content">
                           <h3>Medios magneticos e informes a superintendencias.</h3>
+                          <button type="button" class="btn btncards" data-bs-toggle="modal" data-bs-target="#modalmagneticos">
+                            Ver más
+                          </button>
                         </div>
                       </div>                      
+                </div>
+                <div class="modal fade" id="modalmagneticos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">REGISTRO DE COSTOS Y GASTOS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        El registro de los Costos y Gastos de la empresa, le permite ejercer el control y conocer con certeza en que situación económica se encuentra su negocio.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btncards" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -153,16 +301,16 @@
             <div  id="letrerocarousel" class="col-6">
               <div class="row">
                 <div class="col-12">
-                  <p id="letrero-header" >ANDINA </p>
+                  <p id="letrero-carousel" >Brindamos asesorias contables en las principales ciudades del país </p>
                 </div>
               </div>
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-12">
                   <p id="letrero-header2" >ASESORIAS CONTABLES</p>
                 </div>
-              </div>
+              </div> -->
               
-                <a href="#nosotros" type="button" class="btn" id="btnvirtual" >Virtual</a>
+              <a href="#nosotros" type="button" class="btn" id="btnvirtual" >Virtual</a>
             </div>
             <div id="carouselExampleDark" class="carousel carousel-dark slide col-6 imagen" data-bs-ride="carousel" ">
               <div class="carousel-indicators">
@@ -175,21 +323,21 @@
                   <img src="image/bucaramanga.jfif" class="d-block w-100 h-10" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h1>BUCARAMANGA</h1>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <!-- <p>Some representative placeholder content for the first slide.</p> -->
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
                   <img src="image/bogota.jpg" class="d-block w-100 h-10" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h1>BOGOTÁ</h1>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <!-- <p>Some representative placeholder content for the second slide.</p> -->
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
                   <img src="image/medellin.jpg" class="d-block w-100 h-10" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h1>MEDELLIN</h1>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <!-- <p>Some representative placeholder content for the third slide.</p> -->
                   </div>
                 </div>
               </div>
@@ -211,11 +359,11 @@
       <section id="nosotros">
         <div class="hoja" id="mi-hoja">
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 col-lg-6">
               <p id="txtvirtual">En contables andina te podemos ayudar en el manejo de tu contabilidad, impuestos, nómina y actividades administrativas, constituida por un grupo de profesionales con amplia experiencia para brindarte la asistencia que necesites en cualquier momento.</p>
             </div>
-            <div class="col-6">
-              <img src="image/contabilidad.jpg" alt="Contabilidad">
+            <div class="col-md-6 col-lg-6" id="divimgcontabilidad">
+              <img src="image/contabilidad.jpg" alt="Contabilidad" id="imgcontabilidad">
             </div>
           </div>
           
@@ -245,7 +393,7 @@
         <a href="https://wa.me/15551234567" class="whatsapp-float" target="_blank">
           <i class="fa fa-whatsapp whatsapp-icon"></i>
         </a>
-        <!-- <a href="https://www.flaticon.es/iconos-gratis/contabilidad" title="contabilidad iconos">Contabilidad iconos creados por Freepik - Flaticon</a> -->
+        <!-- iconos creados por Freepik - Flaticon : https://www.flaticon.es/iconos-gratis -->
         <p id="derechos">Derechos reservados &copy; 2023</p>
       </footer>
       
